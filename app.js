@@ -48,7 +48,7 @@ const axios = require('axios');
 const Redis = require("ioredis");
 const redis = new Redis({
     port: 6379, // Redis port
-    host: "127.0.0.1", // Redis host
+    host: "https://newinsat.herokuapp.com", // Redis host
 });
 app.get("/redisData/:userName", async(req, res) => {
 
